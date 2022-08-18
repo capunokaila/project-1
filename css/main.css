@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Kristi&family=Montserrat:wght@500&display=swap');
+
+/* INITIAL SETUP */
+:root{
+  --lg-font: 'Kristi', serif;
+  --sm-font: 'Montserrat', sans-serif;
+  --green: #4b7a47;
+}
+body {
+  font-family: var(--sm-font);
+}
+.btn:not(.nav-btns button){
+  background-color: white;
+  color: rgb(85, 85, 85);
+  padding: 10px 28px;
+  border-radius: 25px;
+  border: 1px solid rgb(85, 85, 85);
+}
+.btn:not(.nav-btns button):hover{
+  background: var(--green);
+  color: white;
+  border: var(--green);
+}
+.title h2::before{
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 50px;
+  background-color: var(--green);
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* NAVBAR */
+.navbar{
+ box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1); 
+}
+.nav-link:hover{
+  color: var(--green) !important;
+  border-bottom: 1px solid var(--green);
+}
+.nav-item{
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+@media(min-width: 992px){
+  .nav-item{
+      border-bottom: none;
+  }
+}
+/* HERO */
+#hero{
+  background: url(../img/banner-img-1.jpg) top/cover;
+}
+
+/* HOOK */
+#hook h2 {
+  color: var(--green);
+}
+.about-intro h1 {
+  color: var(--green);
+}
+
+/* ABOUT */
+#about img {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+#about h2 {
+  font-family: var(--lg-font);
+  font-size: 70px;
+  color: var(--green);
+}
+.tagline {
+  color: var(--green);
+}
+
+/* SERVICES */
+#services {
+  background-color: var(--green);
+}
+.card-title {
+  color: var(--green);
+}
+.services-fee {
+  color: var(--green);
+  font-weight: bold;
+}
+.serv-btn:hover {
+  background-color: #333333 !important;
+  border-color: #333333 !important;
+}
+
+/* PROCESS */
+#process h2 {
+  font-family: var(--lg-font);
+  font-size: 90px;
+}
+
+/* TESTIMONIAL REVIEWS */
+#testimonial-reviews {
+  background: url(../img/banner-img-2.jpg) right/cover;
+}
+#testimonial-reviews .img-testi {
+  width: 65px;
+  height: 65px;
+  border-radius: 100px;
+  transition: all 0.4s ease;
+}
+#testimonial-reviews .nav-pills .nav-link.active {
+  background-color: transparent;
+}
+#testimonial-reviews .nav-pills .nav-link.active img {
+  transform: scale(1.3);
+}
+
+/* CALL TO ACTION */
+#action h2 {
+  color: var(--green);
+}
