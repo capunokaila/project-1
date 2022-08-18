@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Kristi&family=Montserrat:wght@500&display=swap');
+
+/* INITIAL SETUP */
+:root{
+  --lg-font: 'Kristi', serif;
+  --sm-font: 'Montserrat', sans-serif;
+  --green: #4b7a47;
+}
+body {
+  font-family: var(--sm-font);
+}
+.btn:not(.nav-btns button){
+  background-color: white;
+  color: rgb(85, 85, 85);
+  padding: 10px 28px;
+  border-radius: 25px;
+  border: 1px solid rgb(85, 85, 85);
+}
+.btn:not(.nav-btns button):hover{
+  background: var(--green);
+  color: white;
+  border: var(--green);
+}
+.title h2::before{
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 50px;
+  background-color: var(--green);
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* NAVBAR */
+.navbar{
+ box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1); 
+}
+.nav-link:hover{
+  color: var(--green) !important;
+  border-bottom: 1px solid var(--green);
+}
+.nav-item{
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+@media(min-width: 992px){
+  .nav-item{
+      border-bottom: none;
+  }
+}
+/* HERO */
+#hero{
+  background: url(../img/banner-img-3.jpg) center/cover;
+}
+
+/* PROJECTS */
+#projects h5 {
+    border-radius: 5px;
+}
+#projects h6 {
+    border-radius: 5px;
+}
+.projects-img:hover img{
+    transform: scale(1.2);
+}
+.projects-img img{
+    transition: all 0.3s ease;
+}
+.projects-img {
+    box-shadow: 0 30px 20px 3px rgba(0, 0, 0, 0.116); 
+   }
