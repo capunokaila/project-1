@@ -1,10 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Required Meta Tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <!-- Bootsrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/services.css" />
+
+    <!-- ---- Font Awesome ---- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <title>KodeGo Project 1</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-1 fixed-top">
+      <div class="container">
+        <a href="index.html">
+          <img src="img/brand-logo-sm.png" alt="Site Icon" />
+        </a>
+
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navMenu" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item px-2 py-2">
+              <a href="projects.html" class="nav-link text-dark">PROJECTS</a>
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a href="services.html" class="nav-link text-dark">SERVICES</a>
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a href="about.html" class="nav-link text-dark">ABOUT</a>
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a href="contact.html" class="nav-link text-dark">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero" class="vh-100 p-5" style="padding-top: 104px">
+      <div
+        class="container h-100 d-flex align-items-center justify-content-center"
+      >
+        <div class="text-center active">
+          <h1 class="mb-5">
+            <strong>
+              <span>Stand out online —</span>
+            </strong>
+            <strong>
+              <span style="color: #4b7a47">the KAKE way</span>
+            </strong>
+          </h1>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <!-- Hook -->
+  <section id="hook" class="p-3">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="p-5 mx-lg-5 text-center">
+            <p class="pb-5">
+              Here's a familiar scenario: You're a budding biz owner with a
+              clear-cut vision for your business. Everyting seems a-ok on paper
+              until your realize you can't focus on lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Eos accusantium dolorum ipsum
+              placeat nesciunt facilis minima nostrum quod consectetur.
+            </p>
+            <p class="pb-5">
+              Don't worry, you're not alone anymore. KAKE Creative Solutions got
+              you covered Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Voluptatum, quis.
+            </p>
+            <h2>Choose the right service that fits your goals.</h2>
+            <img
+              class="img-fluid p-0"
+              src="img/emphasis-img-1.png"
+              alt="Emphasis 1"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="p-2 mb-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="card bg-dark text-white text-center">
+            <div class="card-body">
+              <img
+                src="img/services-laptop-img.png"
+                class="rounded-circle my-3 img-fluid"
+                alt="Services 1"
+              />
+              <h4 class="card-title my-3">WEB DESIGN AND WEB DEVELOPMENT</h4>
+              <p class="card-text m-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti, earum assumenda consequatur rerum beatae voluptatum
+                harum sequi numquam ab placeat sed quod optio reiciendis dolorem
+                accusamus sit autem aperiam quam impedit corporis pariatur!
+                Corporis provident modi, molestiae consectetur eos optio.
+              </p>
+              <h3 class="card-title pt-2">What's included:</h3>
+            </div>
+            <div>
+              <ul class="mx-lg-5">
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+              </ul>
+            </div>
+            <div class="my-3">
+              <p class="services-fee">STARTS AT $99.99 USD</p>
+              <a href="contact.html" class="btn serv-btn my-3">LET'S DO IT!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card bg-dark text-white text-center">
+            <div class="card-body">
+              <img
+                src="img/services-tablet-img.png"
+                class="rounded-circle my-3 img-fluid"
+                alt="Services 2"
+              />
+              <h4 class="card-title my-3">
+                SALES PAGE DESIGN / COURSE SETUP AND MEMBERSHIP SITE
+              </h4>
+              <p class="card-text m-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti, earum assumenda consequatur rerum beatae voluptatum
+                harum sequi numquam ab placeat sed quod optio reiciendis dolorem
+                accusamus sit autem aperiam quam impedit corporis pariatur!
+                Corporis provident modi, molestiae consectetur eos optio.
+              </p>
+              <h3 class="card-title pt-2">What's included:</h3>
+            </div>
+            <div>
+              <ul class="mx-lg-5">
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+              </ul>
+            </div>
+            <div class="my-3">
+              <p class="services-fee">STARTS AT $99.99 USD</p>
+              <a href="contact.html" class="btn serv-btn my-3">LET'S DO IT!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card bg-dark text-white text-center">
+            <div class="card-body">
+              <img
+                src="img/services-notebook-img.png"
+                class="rounded-circle my-3 img-fluid"
+                alt="Services 3"
+              />
+              <h4 class="card-title my-3">COURSE LAUNCH SUPPORT MANAGEMENT</h4>
+              <p class="card-text m-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti, earum assumenda consequatur rerum beatae voluptatum
+                harum sequi numquam ab placeat sed quod optio reiciendis dolorem
+                accusamus sit autem aperiam quam impedit corporis pariatur!
+                Corporis provident modi, molestiae consectetur eos optio.
+              </p>
+              <h3 class="card-title pt-2">What's included:</h3>
+            </div>
+            <div>
+              <ul class="mx-lg-5">
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+              </ul>
+            </div>
+            <div class="my-3">
+              <p class="services-fee">STARTS AT $99.99 USD</p>
+              <a href="contact.html" class="btn serv-btn my-3">LET'S DO IT!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Question -->
+  <section id="question">
+    <div class="container">
+      <div class="row g-0 d-flex align-items-center">
+        <div class="col lg-7"></div>
+        <div class="col-lg-5">
+          <div class="p-5 mx-lg-5">
+            <p>Why invest in your</p>
+            <h2>ONLINE BRAND</h2>
+            <p class="py-3">
+              Not really sure how this works? We totally understand! Lorem ipsum
+              dolor sit amet consectetur adipisicing elit.
+            </p>
+            <p class="pb-3">
+              - 81% of lorem ipsum dolor sit.
+              <br />
+              - 83% of orem ipsum dolor sit amet consectetur.
+              <br />
+              - This helps 80% of lorem ipsum dolor sit amet consectetur.
+            </p>
+            <p>
+              Not really sure how this works? We totally understand! Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Eos accusantium
+              dolorum ipsum placeat quod consectetur.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process">
+    <div class="container text-center">
+      <p class="mt-5">For more information</p>
+      <h2 class="pb-5">Here's how our process works:</h2>
+    </div>
+    <div class="container text-white">
+      <div class="row text-center g-4 mb-5">
+        <div class="col-md">
+          <div class="card">
+            <div class="card-body text-center">
+              <div class="h1 mb-3"><i class="bi bi-telephone"></i></div>
+              <h3 class="card-title mb-3">Discovery</h3>
+              <p class="card-text">
+                We'll pin down your specific needs early on. You have the option
+                lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Delectus blanditiis voluptates odit magni accusantium!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card">
+            <div class="card-body text-center">
+              <div class="h1 mb-3"><i class="bi bi-check"></i></div>
+              <h3 class="card-title mb-3">Implementation</h3>
+              <p class="card-text">
+                Give the green light when you think our custom-made proposal
+                lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Delectus blanditiis voluptates odit magni accusantium!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card">
+            <div class="card-body text-center">
+              <div class="h1 mb-3"><i class="bi bi-star"></i></div>
+              <h3 class="card-title mb-3">Post-Mortem</h3>
+              <p class="card-text">
+                After every campaign, we'll sit down, measure, your campaign
+                lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Delectus blanditiis voluptates odit magni accusantium!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section id="action" class="p-5">
+    <div class="container">
+      <div class="p-lg-5 mx-lg-5 text-center">
+        <h2>
+          Not sure which service is fit for you? Or can't see the service you
+          are actually looking for?
+        </h2>
+        <a href="contact.html" class="btn mt-5">GET IN TOUCH</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-1 bg-dark text-white">
+    <div class="container d-flex d-flex-row justify-content-between pt-3">
+      <p>KAKE CREATIVE SOLUTIONS &copy; 2022</p>
+      <p>ALL RIGHTS RESERVED.</p>
+    </div>
+  </footer>
+
+  <!-- ---- Bootstrap JS ---- -->
+  <script src="js/bootstrap.bundle.min.js"></script>
 </html>
