@@ -38,7 +38,6 @@ body {
 }
 .nav-link:hover{
   color: var(--green) !important;
-  border-bottom: 1px solid var(--green);
 }
 .nav-item{
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
@@ -54,8 +53,11 @@ body {
 }
 
 /* CONTACT */
-#contact img {
-    border-radius: 50%;
+@media (max-width: 576px) {
+  #contact img {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
 }
 #contact h3 {
     color: var(--green);
